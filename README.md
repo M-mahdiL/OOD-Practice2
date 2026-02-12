@@ -66,3 +66,8 @@ Single Responsibility + جداسازی ساده
 - متدهایی مانند `logHandling(Ticket ticket, String status)` یا `logTransition(Ticket ticket, String fromStatus, String toStatus)` تعریف می‌شود.  
 - در انتهای متد `handle()` در `TicketService` یا داخل هر وضعیت (بعد از تغییر وضعیت)، این لاگر فراخوانی می‌شود.  
 - در پیاده‌سازی فعلی فقط چاپ در کنسول انجام می‌دهد، اما ساختار به‌گونه‌ای است که بعداً بتوان چند لاگر (`ConsoleLogger`, `FileLogger`, `SlackLogger` و …) را اضافه کرد بدون تغییر جاهای دیگر.
+
+### "بخش 2 -ترسیم Class diagram"
+دیاگرام کلاس‌ها و روابط بین سیستم در تصویر زیر نمایش داده شده است.
+
+https://github.com/M-mahdiL/OOD-Practice2/blob/main/ClassDiagram%20.png
