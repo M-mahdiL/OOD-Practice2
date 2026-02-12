@@ -69,4 +69,5 @@ Single Responsibility + جداسازی ساده
 
 ### "بخش 2 -ترسیم Class diagram"
 دیاگرام کلاس‌ها و روابط بین سیستم در تصویر زیر نمایش داده شده است.
+
 https://github.com/M-mahdiL/OOD-Practice2/blob/main/ClassDiagram%20.png
