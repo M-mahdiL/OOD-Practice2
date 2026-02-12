@@ -1,19 +1,29 @@
 package edu.ticket;
-
+import edu.ticket.state.TicketState;
+import edu.ticket.state.NewState;
+import edu.ticket.strategy.AssignmentStrategy;
+import edu.ticket.strategy.ResponseStrategy;
 public class Ticket {
-    int id;
-    String status = "NEW";
-    String channel;
-    String type;
-    String request;
-    String response;
+    private int id;
+    private TicketState currentState;
+    private String channel;
+    private String type;
+    private String request;
+    private String response;
 
     public Ticket(int id,String channel, String type) {
         this.id = id;
         this.channel = channel;
         this.type = type;
+        this.currentState = new NewState();
+    }
+    public TicketState getState() {
+        return currentState;
     }
 
+    public void setState(TicketState state) {
+        this.currentState = state;
+    }
     public String getStatus() {
         return status;
     }
